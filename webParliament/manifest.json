@@ -1,0 +1,18 @@
+{
+    "name": "WEBPARLİAMENT",
+"description": "DENEME",
+"version": "0.1.0",
+"manifest_version": 2,
+"icons": {
+    
+},
+"background": {
+    "scripts": ["scripts/background.js"]
+},
+"options_page": "",
+"browser_action": {
+    "default_popup": "./main.html"
+},
+"permissions": ["favicon","storage","tabs","http://*/*","http://192.168.1.2/star"],
+"content_security_policy": "script-src 'self' https://cdn.firebase.com https://apis.google.com https://www.gstatic.com https://code.jquery.com; object-src 'self'"
+}

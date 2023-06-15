@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="scripts/popup-init.js"></script> Asenkron çalışmasından kaynaklı bu sayfadan kaldırılarak main.js'e eklendi -->
+    <script src="scripts/star.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+    <div class="website-info">
+        <img id="website-logo" class="banner-img" src="feedback.png"></img>
+        <!-- Web Site URI gelecek -->
+        <p id="website-name" class="">www.examp.com</p>
+        <!-- <p id="website-rating">0.0</p> -->
+        <div class="website-rating">
+
+            <!-- <img id="website-logo" src="" alt="This Website Icon">
+             <p id="website-name">Website Name</p> -->
+
+            <form class='stars' id="starsWebSite">
+                <input type="radio" name='stars' value='5' id='bes' class='star' disabled>
+                <label for="bes"><i class='fa fa-star'></i></label>
+                <input type="radio" name='stars' value='4' id='dort' class='star' disabled>
+                <label for="dort"><i class='fa fa-star'></i></label>
+                <input type="radio" name='stars' value='3' id='uc' class='star' disabled>
+                <label for="uc"><i class='fa fa-star'></i></label>
+                <input type="radio" name='stars' value='2' id='iki' class='star' disabled>
+                <label for="iki"><i class='fa fa-star'></i></label>
+                <input type="radio" name='stars' value='1' id='bir' class='star' disabled>
+                <label for="bir"><i class="fa fa-star"></i></label>
+            </form>
+
+        </div>
+
+    </div>
+
+     <!-- id si divim'di -->
+
+           <!-- <div id="inpGetUrl"></div> -->
+        <div class="cizgi"></div>
+
+        <div class="rating">
+            <p>Sizin puanınız;</p>
+            <form class='stars' id="starsUser">
+                <!-- <input type="radio" name='stars' value='1' id='one' class='star'> -->
+                <!-- <label for="five"><i class='fa fa-star'></i></label> -->
+                <!-- <input type="radio" name='stars' value='2' id='two' class='star'> -->
+                <!-- <label for="four"><i class='fa fa-star'></i></label> -->
+                <!-- <input type="radio" name='stars' value='3' id='three' class='star'> -->
+                <!-- <label for="three"><i class='fa fa-star'></i></label> -->
+                <!-- <input type="radio" name='stars' value='4' id='four' class='star'> -->
+                <!-- <label for="two"><i class='fa fa-star'></i></label> -->
+                <!-- <input type="radio" name='stars' value='5' id='five' class='star'> -->
+                <!-- <label for="one"><i class="fa fa-star"></i></label> -->
+                    <input type="radio" name='stars' value='5' id='five' class='star' >
+                    <label for="five"><i class='fa fa-star'></i></label>
+                    <input type="radio" name='stars' value='4' id='four' class='star'>
+                    <label for="four"><i class='fa fa-star'></i></label>
+                    <input type="radio" name='stars' value='3' id='three' class='star'>
+                    <label for="three"><i class='fa fa-star'></i></label>
+                    <input type="radio" name='stars' value='2' id='two' class='star'>
+                    <label for="two"><i class='fa fa-star'></i></label>
+                    <input type="radio" name='stars' value='1' id='one' class='star'>
+                    <label for="one"><i class="fa fa-star"></i></label>
+                  
+            </form>
+
+            <div id="rateDate"></div>
+
+            <button type="submit" class = "btn btn-send" id="btnStars">Puanla</button>
+        </div>
+
+
+
+        <!-- <p id="show"></p>
+
+        <img id="icon" src="" alt=""> -->
+
+        <div class="chatGPT">
+            <img style="width: 30px; height: 30px;" src="chatlogoWhite.png" class="rotate" srcset="">
+            <p id="chat">Chat-GPT...</p>
+        </div>
+
+    
+        <!-- <div id="userName"> Designed by mayliba (Main Page)</div> -->
+        <navbar>
+            <ul class = "navbar-list">
+                <li><button style="background-color: #333333; color: white;" id = "btnHome" class="btn btn-navbar"><i class="fa fa-home fa-lg" aria-hidden="true"></i><p>Ana<br>Sayfa</p></button></li>
+                <li><button id = "userPage" class="btn btn-navbar"><i class="fa fa-user fa-lg" aria-hidden="true"></i><p>Kullanıcı <br> Paneli</p></button></li>
+                <!-- <li><button id = "sign_out" class="btn btn-navbar"><i class="fa fa-sign-out fa-lg"></i><p>Çıkış <br>yap</p></button></li> -->
+            </ul>
+        </navbar>
+    
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/allPages.js"></script>
+ 
+
+
+</div>
+</body>
+
+</html>

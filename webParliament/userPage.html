@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="userpage-content">
+
+    
+    <div id="userProfile" class = "user-info-section" style="display:unset;">
+        <img style="align-items: center;" src="" id="UserPicture" alt="Kullanıcı profil fotoğrafı"></i>
+        <p id="UserName"></p>
+        <p id="UserEmail"></p>
+        </div>
+        
+        <div class="login-section">
+            <!-- <p class="google-login-text">
+                Google hesabınızla giriş yapın
+            </p> -->
+            <div id="sign_in_options" class="sign-in-out"></div>
+            <button id="sign_out" class="sign-in-out">Çıkış yap</button>
+        </div>
+        
+    
+        </div>
+        <navbar>
+            <ul class = "navbar-list">
+                <li><button id = "btnHome" class="btn btn-navbar"><i class="fa fa-home fa-lg" aria-hidden="true"></i><p>Ana<br>Sayfa</p></button></li>
+                <li><button id = "userPage" style="background-color: #333333; color: white;" class="btn btn-navbar"><i class="fa fa-user fa-lg" aria-hidden="true"></i><p>Kullanıcı <br> Paneli</p></button></li>
+                <!-- <li><button style="background-color: #333333; color: white;" id = "sign_out" class="btn btn-navbar"><i class="fa fa-sign-out fa-lg"></i><p>Çıkış <br>yap</p></button></li> -->
+            </ul>
+        </navbar>
+
+    <script src="scripts/popup-script.js"></script>
+    <script src="scripts/userPage.js"></script>
+    <script src="scripts/allPages.js"></script>
+
+</div>
+</body>
+</html>

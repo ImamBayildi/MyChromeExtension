@@ -1,0 +1,12 @@
+{
+    "k1": {
+        "isim": "ahmet",
+        "sifre":1230,
+        "msg": null
+    },
+    "k2": {
+        "isim": "yagmur",
+        "sifre":1235,
+        "msg": null
+    }
+}

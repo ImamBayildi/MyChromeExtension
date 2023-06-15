@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <h1 style="color: blueviolet;">EBM SERVER</h1>
+        
+        <input type="text" id="inp">
+
+        <div id="div"></div>
+        <br>
+        <button id="btnGonder">Gonder</button>
+
+        <br>
+        <br>
+
+        <input type="text" name="mesajlar" id="messages" disabled>
+
+
+
+        <script>
+           
+           var url = '10.31.101.128:1881/msg'
+            document.getElementById("btnGonder").addEventListener('click',function () {
+                
+                var msj =document.getElementById("inp").value
+                console.log("Mesajin: "+msj)
+                
+
+                fetch('/msg', {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message: msj })
+                })
+                    .then(response => response.text())
+                    .then(data => console.log(data))
+                    .catch(error => console.log("Komutan Logar, bir hata yaklaşıyor: " + error));
+
+
+              
+             })
+        </script>
+    </body>
+</html>

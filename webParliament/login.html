@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/popup-init.js"></script>
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="banner">
+        
+        <img id="user-profile" class="banner-img" src="google.png" style="max-width: 25px; max-height: 25px;"></i>
+        <p id="userName"></p>
+         
+    </div>
+    <div class="navbar">
+        <button style="--clr:#39FF14" id="btnHome">
+            <i class="fa fa-home"></i>
+        </button>
+        <button style="--clr:#39FF14" id="btnUser">
+            <i class="fa fa-user"></i>
+        </button>
+        <button style="--clr:#39FF14" id="btnCog">
+            <i class="fa fa-cog"></i>
+        </button>
+        <button style="--clr:#FF0000" id="sign_out">
+            <i class="fa fa-sign-out"></i>
+        </button>
+    </div>
+    <div class="content">
+
+        <div style="display:none" id="history1">
+            <img style="display: none;" src="">
+            <p></p>
+            <form class='stars' id="starsWebSite">
+                <input type="radio" name='stars' value='1' id='one' class='star' >
+                <label for="five"><i class='fa fa-star'></i></label>
+                <input type="radio" name='stars' value='2' id='two' class='star'>
+                <label for="four"><i class='fa fa-star fa-xl'></i></label>
+                <input type="radio" name='stars' value='3' id='three' class='star'>
+                <label for="three"><i class='fa fa-star'></i></label>
+                <input type="radio" name='stars' value='4' id='four' class='star'>
+                <label for="two"><i class='fa fa-star'></i></label>
+                <input type="radio" name='stars' value='5' id='five' class='star'>
+                <label for="one"><i class="fa fa-star"></i></label>
+              </form>
+        </div>
+
+
+        
+        
+    </div>
+
+
+    <script src="scripts/allPages.js"></script>
+    <script src="scripts/user.js"></script>
+</body>
+
+</html>
